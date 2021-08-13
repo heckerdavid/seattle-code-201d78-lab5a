@@ -55,11 +55,19 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 // you get back an array from sum!!!
+  let add = sum(a,b)
+  let realSum = sum(add[0], c)
+  let multi = multiply(a, b)
+  let realMulti = multiply(multi[0], c)
+  let third = a + " and " + b + " and " + c + " sum to " + realSum[0] + "."
+  let fourth = `The product of ${a} and ${b} and ${c} is ${realMulti[0]}.`
+  let array = [realSum[0], realMulti[0], third, fourth]
+  return array
 // make sure your get the correct index number to get the number from sum
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
