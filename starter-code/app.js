@@ -142,8 +142,6 @@ let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 let x = 1;
 
 function multiplyAnyArray(arg) { //eslint-disable-line
-  // debugger;
-
   for(let i = 0; i < 100; i++){
     if (!arg[0]){
       break;
@@ -155,21 +153,8 @@ function multiplyAnyArray(arg) { //eslint-disable-line
     }
   }
   let array = [x, `The numbers 1,2,3,4,5 have a product of ${x}.`];
-  console.log(array)
   return array
 }
-
-// function doIt(arg) {
-// }
-// function fuckIT() {
-// let x = multiply(dynamicArray[0], dynamicArray[1]);
-// dynamicArray.shift();
-// dynamicArray.shift();
-// return x[0];
-// }
-// while (dynamicArray) {
-//   fuckIT()
-// }
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyAnyArray(testDynamicArray);
